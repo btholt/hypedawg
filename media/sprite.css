@@ -1,0 +1,189 @@
+/* 80 x 32pixels per frame. */
+/* https://chancekite.itch.io/pixeldog01 */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hypedawg {
+  background-repeat: no-repeat;
+  background-position: 40 0;
+  display: inline-block;
+  margin-top: 25px;
+  height: 32px;
+  width: 40px;
+  transform: scale(-4, 4);
+  image-rendering: pixelated;
+}
+
+@keyframes idle {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: -80px 0px;
+  }
+}
+
+@keyframes read {
+  from {
+    background-position: 0px -32px;
+  }
+  to {
+    background-position: -320px -32px;
+  }
+}
+
+@keyframes walk {
+  from {
+    background-position: 0px -64px;
+  }
+  to {
+    background-position: -160px -64px;
+  }
+}
+
+@keyframes run {
+  from {
+    background-position: 0px -96px;
+  }
+  to {
+    background-position: -160px -96px;
+  }
+}
+
+@keyframes playful {
+  from {
+    background-position: 0px -128px;
+  }
+  to {
+    background-position: -160px -128px;
+  }
+}
+
+@keyframes bark {
+  from {
+    background-position: 0px -160px;
+  }
+  to {
+    background-position: -240px -160px;
+  }
+}
+
+@keyframes sit {
+  from {
+    background-position: 0px -192px;
+  }
+  to {
+    background-position: -280px -192px;
+  }
+}
+
+@keyframes tilt {
+  from {
+    background-position: 0px -224px;
+  }
+  to {
+    background-position: -560px -224px;
+  }
+}
+
+@keyframes leap {
+  from {
+    background-position: 0px -256px;
+  }
+  to {
+    background-position: -320px -256px;
+  }
+}
+
+@keyframes howl {
+  from {
+    background-position: 0px -288px;
+  }
+  to {
+    background-position: -240px -288px;
+  }
+}
+
+@keyframes paw {
+  from {
+    background-position: 0px -320px;
+  }
+  to {
+    background-position: -400px -320px;
+  }
+}
+
+@keyframes beg {
+  from {
+    background-position: 0px -352px;
+  }
+  to {
+    background-position: -360px -352px;
+  }
+}
+
+@keyframes rollover {
+  from {
+    background-position: 0px -384px;
+  }
+  to {
+    background-position: -360px -384px;
+  }
+}
+
+@keyframes wetDogShake {
+  from {
+    background-position: 0px -416px;
+  }
+  to {
+    background-position: -240px -416px;
+  }
+}
+
+/* CSS Classes for each animation */
+.idle {
+  animation: idle 1s steps(2) infinite;
+}
+.read {
+  animation: read 2s steps(8) infinite;
+}
+.walk {
+  animation: walk 1s steps(4) infinite;
+}
+.run {
+  animation: run 0.8s steps(4) infinite;
+}
+.playful {
+  animation: playful 0.8s steps(4) infinite;
+}
+.bark {
+  animation: bark 1.5s steps(6) infinite;
+}
+.sit {
+  animation: sit 2s steps(7) infinite;
+}
+.tilt {
+  animation: tilt 3s steps(14) infinite;
+}
+.leap {
+  animation: leap 2s steps(8) infinite;
+}
+.howl {
+  animation: howl 2s steps(6) infinite;
+}
+.paw {
+  animation: paw 1.5s steps(10) infinite;
+}
+.beg {
+  animation: beg 1.5s steps(9) infinite;
+}
+.rollover {
+  animation: rollover 1.5s steps(9) infinite;
+}
+.wetDogShake {
+  animation: wetDogShake 1s steps(6) infinite;
+}
